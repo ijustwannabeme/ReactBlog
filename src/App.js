@@ -31,7 +31,15 @@ function App() {
         글 수정
       </button>
 
-      <button></button>
+      <button
+        onClick={() => {
+          let copy = [...contentsTitle];
+          copy.sort();
+          setContentsTitle(copy);
+        }}
+      >
+        가나다순 정렬
+      </button>
 
       <div className="list">
         <h4>
