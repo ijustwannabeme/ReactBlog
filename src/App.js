@@ -1,5 +1,7 @@
 import "./App.css";
+import "./components/modal";
 import { useState } from "react";
+import Modal from "./components/modal";
 
 function App() {
   const post = "강남 우동 맛집";
@@ -63,10 +65,8 @@ function App() {
         <h4>{contentsTitle[2]}</h4>
         <p> 2월 17일 발행</p>
       </div>
-      <div className="list">
-        <h4>글 제목</h4>
-        <p> 2월 17일 발행</p>
-      </div>
+
+      <Modal></Modal>
     </div>
   );
 }
